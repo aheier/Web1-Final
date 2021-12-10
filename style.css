@@ -50,6 +50,7 @@ footer{
     width: 100%;
     background-color: rgb(80, 80, 80);
     clear:both;
+    margin-top:50px; /*to get to stick to bottom*/
 }
 footer div{
     color:white;
