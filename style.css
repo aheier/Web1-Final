@@ -7,16 +7,22 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     background-color: #fafafa;
     background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
 }
 .wrapper {
-    min-height: 800px;
+    min-height: 600px;
     float:none;
 }
 .content{
     width: min(960px, 80%);
-    margin: auto;
+    margin: auto; 
     background-color: #fafafa;
     border:1px solid #e1e1e1;
+}
+@media screen and (max-width: 800px) {
+    .content{
+        width: 90%;
+    }
 }
 
 nav{
@@ -50,7 +56,7 @@ footer{
     width: 100%;
     background-color: rgb(80, 80, 80);
     clear:both;
-    margin-top:50px; /*to get to stick to bottom*/
+    margin-top:100%; /*to get to stick to bottom*/
 }
 footer div{
     color:white;
@@ -62,4 +68,96 @@ footer div{
     padding-left:20px;
     margin:0;
     float: left;
+}
+/* home page */
+.game-logo-left{
+    height:60px;
+    padding-left:10px;
+    margin:0;
+}
+.game-logo-right{
+    height:60px;
+    padding-right:10px;
+    margin:0;
+}.game-logo-left-sm{
+    height:40px;
+    padding-left:5px;
+    margin:0;
+}
+.game-logo-right-sm{
+    height:40px;
+    padding-right:5px;
+    margin:0;
+}
+.title{
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.row{
+    text-align: center;
+    padding: 2px;
+}
+.col{
+    flex:1;
+    padding:10px;
+}
+.col-2{
+    flex:2;
+    padding: 10px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.grey{
+    color:lightgrey;
+}
+.left::after{
+    float: none;
+}
+.right::after{
+    float: none;
+}
+
+/* team page */
+
+.table{
+    width:100%;
+    text-align: left;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 1px solid #e1e1e1;
+}
+th{
+    background-color: lightgrey;
+    text-align: center;
+}
+th, td{
+    padding: .5em;
+    vertical-align:middle;
+}
+tr:nth-of-type(odd){
+    background-color: rgb(238, 235, 235);
+}
+.person{
+    height: 40px;
+    padding-right: 20px;
+}
+
+/* photos page */
+.photo{
+    border: 2px solid black;
+}
+.next, .previous{
+    width: 80%;
+}
+.main{
+    width: 100%;
 }
