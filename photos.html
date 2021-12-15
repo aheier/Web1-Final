@@ -5,9 +5,13 @@
     <link rel="stylesheet" href="style.css">
     <title> Home </title>
     <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <script src="jquery-3.2.0.min.js"></script>
+    
+    <script src="script.js"></script>
+    
 </head>
 
-<body>
+<body title="US Bank Stadium">
     <header>
         <nav>
             <img class="logo" src="images/logo.png">
@@ -22,17 +26,18 @@
         <div class="content">
             <h1 class="title">Team Photo Gallery</h1>
             <div class="flex row">
+                <input id="img_no"     type="hidden"  value="1">
                 <div class="col">
                     <h3>Previous</h3>
-                    <img class="photo previous" src="images/previous.jpg">
+                    <input id="prev" type="image" class="photo previous" src="images/img0.jpg" alt="Previous Image">
                 </div>
                 <div class="col-2">
-                    <img class="photo main" src="images/selected.jpg">
+                    <img id="main" class="photo main" src="images/img1.jpg" alt="Main Image">
 
                 </div>
                 <div class="col">
                     <h3>Next</h3>
-                    <img class="photo next" src="images/next.jfif">
+                    <input id="next" type="image" class="photo next" src="images/img2.jfif" alt="Next Image">
                 </div>
             </div>
         </div>
