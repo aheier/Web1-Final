@@ -7,13 +7,15 @@ body {
     margin: 0;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     background-color: #fafafa;
-    background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
+    /* overflow: hidden; */
 }
 .wrapper {
-    min-height: 600px;
+    min-height: 90vh;
     float:none;
+    background-image: url("images/background.jpg");
+    /* background-repeat: no-repeat; */
 }
+
 .content{
     width: min(960px, 80%);
     margin: auto; 
@@ -57,7 +59,7 @@ footer{
     width: 100%;
     background-color: rgb(80, 80, 80);
     clear:both;
-    margin-top:100%; /*to get to stick to bottom*/
+    /* margin-top:100%; to get to stick to bottom */
 }
 footer div{
     color:white;
@@ -165,4 +167,18 @@ tr:nth-of-type(odd){
 .principles{
     margin-top: 10px;
     text-indent: .5in;
+}
+.no-padding{
+    padding:0;
+}
+.watch-button{
+    font-size: 16px;
+    color: #800080;
+    padding: 10px;
+}
+.top-bottom-clear{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
