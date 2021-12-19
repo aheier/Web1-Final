@@ -165,6 +165,7 @@ tr:nth-of-type(odd){
     width: 100%;
 }
 .principles{
+    padding:10px;
     margin-top: 10px;
     text-indent: .5in;
 }
